@@ -2,8 +2,6 @@ import React from 'react';
 import BodyComponent from './BodyComponent';
 
 export default class Body extends React.Component {
-
-
     render() {
         return(
             <div>
