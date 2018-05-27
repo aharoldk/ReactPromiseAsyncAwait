@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import Body from './Body';
 
-export default class App extends Component {
+export default class Surabaya extends Component {
   
   constructor(props){
     super(props);
@@ -12,11 +12,9 @@ export default class App extends Component {
       list:[]
     }
   }
-
   
-
   componentDidMount(){
-    const idCity = '1622786'; //makassar
+    const idCity = '1625822'; //surabaya
     const cntDay = '16'
     const appId = 'b4951299cd6f2e36520517762fc87bf5'; //this is my appId. Please get a new appId in openweather.org
 
@@ -56,7 +54,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header owner={this.state.nameUser}/>
+        <Header owner={this.state.nameUser} city="Surabaya"/>
         <Body lists={this.state.list} />
       </div>
     );
